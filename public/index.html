@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>영화 검색 및 등록</title>
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">영화 검색 API</h1>
+    
+    <!-- 영화 등록 폼 영역 -->
+    <div class="form-area">
+      <h2>영화 등록</h2>
+      <input type="text" id="newTitle" class="input-field" placeholder="영화 제목">
+      <input type="text" id="newAuthor" class="input-field" placeholder="감독">
+      <input type="number" id="newYear" class="input-field" placeholder="제작 연도">
+      <input type="text" id="newGenre" class="input-field" placeholder="장르">
+      <textarea id="newSummary" class="input-field" placeholder="영화 요약"></textarea>
+      <button id="createBtn" class="create-button">등록</button>
+    </div>
+    
+    <!-- 영화 검색 영역 -->
+    <div class="search-area">
+      <h2>영화 검색</h2>
+      <input type="text" id="titleInput" class="input-field" placeholder="영화 제목 입력">
+      <button id="searchBtn" class="search-button">검색</button>
+    </div>
+    
+    <!-- 검색 결과 영역 (포스터 형식) -->
+    <h2 class="result-title">검색 결과</h2>
+    <div id="results" class="results-container"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

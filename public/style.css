@@ -1,0 +1,161 @@
+/* Google Fonts로 설정된 트렌디한 폰트 적용 */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;  /* 밝은 그레이 톤 배경 */
+  }
+  
+  /* 중앙 컨테이너: 깔끔한 흰색, 부드러운 그림자 */
+  .container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  /* 제목 스타일: 모던한 굵기와 색상 */
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  /* 영화 등록 폼 영역 스타일 */
+  .form-area {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f0f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  .form-area h2 {
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  
+  /* 검색 영역 */
+  .search-area {
+    margin-bottom: 20px;
+  }
+  
+  /* 입력창과 textarea 공통 스타일 */
+  .input-field {
+    display: block;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+  
+  /* textarea 높이 조정 */
+  textarea.input-field {
+    height: 80px;
+    resize: none;
+  }
+  
+  /* 검색 버튼 스타일 */
+  .search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6b6b;  /* 트렌디한 코랄 색상 */
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #ee5253;
+  }
+  
+  /* 영화 등록 버튼 스타일 */
+  .create-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #1dd1a1;  /* 민트 계열의 색상 */
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .create-button:hover {
+    background-color: #10ac84;
+  }
+  
+  /* 결과 제목 스타일 */
+  .result-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  
+  /* 결과 영역 (좌우 스크롤 캐러셀) */
+  .results-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+    scroll-behavior: smooth;
+  }
+  
+  /* 영화 포스터 박스 스타일 */
+  .result-item {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    position: relative;
+  }
+  
+  /* 영화 정보 내부 스타일 */
+  .result-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+  
+  .result-item p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #666666;
+  }
+  
+  /* 삭제 버튼 스타일 */
+  .delete-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff6b6b;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #ee5253;
+  }
+  
